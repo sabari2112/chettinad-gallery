@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Gallery | Chettinad Architectural & Cultural Heritage</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+
+    <!-- Gallery Header -->
+    <header class="gallery-header">
+        <div class="header-container">
+            <a href="#" class="brand-logo" onclick="showMainPage(); return false;">
+                <div class="logo-box">CH</div>
+                <div class="logo-text">
+                    <span class="brand-title">CHETTINAD</span>
+                    <span class="brand-sub">HERITAGE</span>
+                </div>
+            </a>
+            
+            <div class="header-title">
+                <h1>Digital Gallery Archive</h1>
+                <p>Preserving the past, informing the future</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN PAGE: THE 4 FOLDER CARDS -->
+    <main id="mainPage" class="view-section active">
+        <div class="section-intro">
+            <h2>Digital Heritage Collections</h2>
+            <p>Select any collection card to inspect the archival images inside its repository folder.</p>
+        </div>
+        
+        <div class="cards-grid" id="cardsGrid">
+            <!-- Populated via JS -->
+        </div>
+    </main>
+
+    <!-- FOLDER DETAIL VIEW SUB-PAGE -->
+    <section id="folderPage" class="view-section">
+        <div class="folder-header-bar">
+            <button class="btn-back" onclick="showMainPage()">
+                <i class="fa-solid fa-arrow-left"></i> Back to Collections
+            </button>
+            <div class="folder-title-wrap">
+                <span class="folder-badge" id="folderBadge">/folder_name</span>
+                <h2 class="folder-title" id="folderTitle">Folder Name</h2>
+            </div>
+        </div>
+
+        <div class="image-grid" id="imageGrid">
+            <!-- Images populated via JS -->
+        </div>
+    </section>
+
+    <!-- LIGHTBOX PREVIEW MODAL -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+            <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            
+            <div class="lightbox-img-wrapper">
+                <img id="lightboxImg" src="" alt="Preview">
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption">Filename</div>
+        </div>
+    </div>
+
+    <!-- External JavaScript Files -->
+    <script src="js/gallery.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
