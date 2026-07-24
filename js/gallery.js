@@ -136,8 +136,8 @@ title: "Kottan Basket Making",
     },
     {
         id: "tile-making",
-        folderName: "tile making",
-        title: "Tile Making",
+        folderName: "Athangudi tile making",
+        title: "Athangudi Tile Making",
         images: [
             "tile making/1 (2).png",
             "tile making/1 (3).png",
