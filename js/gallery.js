@@ -57,8 +57,8 @@ const GALLERY_FOLDERS = [
     },
     {
         id: "products-and-dye-making",
-        folderName: "products and dye making",
-        title: "Products & Dye Making",
+        folderName: "Kottan Basket Making",
+title: "Kottan Basket Making",
         images: [
             "products and dye making/C1246T01.JPG",
             "products and dye making/C1247T01.JPG",
@@ -101,9 +101,7 @@ const GALLERY_FOLDERS = [
             "products and dye making/C1345T01.JPG",
             "products and dye making/C1346T01.JPG",
             "products and dye making/C1347T01.JPG",
-            "products and dye making/C1348T01.JPG",
-            "products and dye making/C1349T01.JPG",
-            "products and dye making/C1350T01.JPG",
+           "products and dye making/C1350T01.JPG",
             "products and dye making/C1351T01.JPG",
             "products and dye making/C1352T01.JPG",
             "products and dye making/C1353T01.JPG",
@@ -129,15 +127,11 @@ const GALLERY_FOLDERS = [
             "products and dye making/C1373T01.JPG",
             "products and dye making/C1374T01.JPG",
             "products and dye making/C1375T01.JPG",
-            "products and dye making/C1376T01.JPG",
             "products and dye making/C1377T01.JPG",
-            "products and dye making/C1378T01.JPG",
-            "products and dye making/C1379T01.JPG",
             "products and dye making/C1380T01.JPG",
-            "products and dye making/C1381T01.JPG",
-            "products and dye making/C1382T01.JPG",
-            "products and dye making/C1383T01.JPG",
-            "products and dye making/C1384T01.JPG"
+        
+        
+           
         ]
     },
     {
